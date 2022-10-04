@@ -23,3 +23,5 @@ src/IMAGE_TAG
 .DS_Store
 .idea
 *.iml
+
+flagsmith-local
