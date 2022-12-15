@@ -10,7 +10,9 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
+from splunk_otel.tracing import start_tracing
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "app.settings.local")
 
+start_tracing()
 application = get_wsgi_application()
